@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Farmhouse theme colors
+				farmhouse: {
+					green: {
+						light: '#9CB380',
+						DEFAULT: '#4D724D',
+						dark: '#2D4D2D'
+					},
+					earth: {
+						light: '#F5F1E0',
+						DEFAULT: '#E7DFC6',
+						dark: '#C7BEA2'
+					},
+					wood: {
+						light: '#A67F5D',
+						DEFAULT: '#8C6D4F',
+						dark: '#634832'
+					},
+					accent: '#B7B7A4'
 				}
 			},
 			borderRadius: {
@@ -84,11 +104,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
 			}
 		}
 	},
